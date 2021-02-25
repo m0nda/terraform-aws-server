@@ -2,7 +2,7 @@ provider "aws" {
 }
 
 module "server" {
-  source = "app.terraform.io/YOUR_ORG_NAME/server/aws"
+  source = "https://github.com/m0nda/terraform-aws-server"
 
   ami                    = var.ami
   subnet_id              = var.subnet_id
